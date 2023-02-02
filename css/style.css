@@ -4,7 +4,8 @@
 }
 
 body {
-  font-family: ‚Roboto’, sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-color);
 }
 
 /*Header*/
@@ -14,30 +15,22 @@ header a:focus {
   color: #2196f3;
 }
 
-footer a:hover,
-footer a:focus {
-  color: #2196f3;
-}
-
 .contact a {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1, 14;
   letter-spacing: 0.02em;
 
   color: var(--secondary-color, grey);
 }
 
-.contact-tel {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
 .nav-menu a {
   display: inline-block;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1, 14;
   letter-spacing: 0.02em;
 
   color: var(--primary-color, black);
@@ -50,7 +43,7 @@ footer a:focus {
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1, 19;
 
   letter-spacing: 0.03em;
 }
@@ -62,13 +55,82 @@ footer a:focus {
   color: #000000;
 }
 
-/*Menu*/
+/*Index-main*/
+
+.main {
+  background: #2f303a;
+}
+
+.section-h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1, 36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+
+.main-h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-color, black);
+}
+
+.main-describe {
+  font-size: 14px;
+  line-height: 1, 71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-color, grey);
+}
+
+.section-h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-color, black);
+}
+
+/*What we do*/
+
+.caption-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 18;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-color, black);
+}
+
+.caption-function {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1, 18;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-color, grey);
+}
+
+/*Menu- portfolio*/
 
 .section-list-menu {
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  /* identical to box height, or 162% */
+  line-height: 1, 625;
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -76,35 +138,68 @@ footer a:focus {
   color: #ffffff;
 }
 
+/*Button-portfolio*/
+
 .button:hover,
 .button:focus {
   color: #ffffff;
   background: #2196f3;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
-/*Menu-all*/
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 625;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-color, black);
+}
+
+/*Button-index*/
+
+.button-main:hover,
+.button-main:focus {
+  color: #ffffff;
+  background: #2196f3;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.button-main {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 875;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/*Menu-all portfolio*/
 
 ul {
   list-style-type: none;
 }
 
-.section-h4 {
+.project {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
-  /* identical to box height, or 200% */
+  line-height: 2;
 
   letter-spacing: 0.06em;
   color: var(--primary-color, black);
 }
 
-.section-h5 {
+.project-name {
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
+  line-height: 1, 875;
 
   letter-spacing: 0.03em;
   color: var(--secondary-color, grey);
@@ -116,127 +211,54 @@ footer {
   background: #2f303a;
 }
 
-footer .logo-web:hover,
-footer .logo-studio-footer:focus {
-  color: #2196f3;
-}
 .logo-footer {
   text-decoration: none;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  /* identical to box height */
+  line-height: 1, 19;
 
   letter-spacing: 0.03em;
-}
-
-.adres {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.contact-email {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-  text-decoration-line: underline;
-
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.contact-tel-footer {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .logo-studio-footer {
   color: #ffffff;
 }
 
-.logo-studio-footer:hover,
-.logo-studio-footer:focus {
-  color: #2196f3;
-}
-
-/*index*/
-
-.section-main {
-  background: #2f303a;
-}
-
-.section-h1 {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  /* or 136% */
-
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  color: #ffffff;
-}
-
-.section-li {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--primary-color, black);
-}
-
-.section-p {
+.adress {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
+  line-height: 1, 71;
 
   letter-spacing: 0.03em;
-
-  color: var(--secondary-color, grey);
+  color: #ffffff;
 }
 
-.section-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--primary-color, black);
-}
-
-.section-john {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-
-  color: var(--primary-color, black);
-}
-
-.section-function {
+.contact-email {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: 1, 71;
 
-  color: var(--secondary-color, grey);
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-tel-footer {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 71;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
 }
